@@ -1,0 +1,72 @@
+
+					DOCKER  COMMANDS 
+          
+   1.docker-version
+          Above command is used to get the currently installed version of docker.
+          
+    2.docker pull<image name>
+         This command is used to pull the image from the docker repository.
+         
+    3. docker run
+          Docker run -it-d <image name>
+          This command is used to create a container from an image.
+          
+     4.docker ps
+       Above command is used to list out all the running containers.
+        To  stop all the running containers by adding  - -all option
+       Docker  ps   - -all
+       
+    5.docker ps -a
+     This command  is used to show all running and exited containers.
+     
+    6.docker exec	
+    Docker exec -it <container id> bash
+     This command is used to access the running container.
+     
+    7.docker stop
+   Docker stop <container id>
+  This command is used to stop a running  container.
+  
+   8.docker kill
+   Docker kill <container id>
+  Above command is used  to kill the container by stopping its execution immediately.
+  
+   9.docker commit
+   Docker commit < container  id> <username /imagename>
+   This command create  a new image of an  edited( changed)  container on the local system.
+   
+  10.docker login
+  This command to login to  the docker hub repository.
+  
+   11. docker push
+   Docker push < username/imagename>
+   This command is used to push an image into the docker hub repository.
+   
+   12.docker images  
+This command lists all the locally stored docker images.
+
+   13.docker rm
+ Docker rm <container id>
+Above command is used to delete a stopped container.
+
+  14.docker rmi
+Docker rmi <image_id>
+Above command is used to delete an image from the local storage. 
+
+  15. docker build 
+Docker build <path to docker file>
+Above command is used to build an image from specified docker file.
+
+  16.docker run
+ We have some images(in docker host) to create  a container.
+Docker  run  - -env; here - - env option to set  a mandatory environment variable
+Docker run - -detach; here - -detach is used to run the container in background
+Docker run - -name; here - - name is  assign  a name to the container, docker will randomly assign a name ,if donot provide.
+
+  17.docker restart
+Let restart our stopped containers by using above  command.
+
+ 18. docker logs
+ Above command  is used to debug our docker container.
+Docker  logs  test_db ;it will fetch logs from a specified container.
+
